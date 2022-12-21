@@ -1,18 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
 
-export default function BottomBar() {
+export default function Canvas() {
   return (
     <Wrapper>
-
+      hi
     </Wrapper>
+
   )
 }
-
 const Wrapper = styled.div`
-  height: 50px;
-  width: 100%;
-  background-color: pink;
-  position:absolute;
-  bottom:0;
+  flex:1;
+  background-color: yellow;
 `
