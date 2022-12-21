@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components'
 
-export default function BottomBar() {
+interface BottomBarProps {
+
+}
+
+export default function BottomBar({}:BottomBarProps): ReactElement {
   return (
     <Wrapper>
 
@@ -13,6 +17,6 @@ const Wrapper = styled.div`
   height: 50px;
   width: 100%;
   background-color: pink;
-  position:absolute;
+  position:fixed;
   bottom:0;
 `
