@@ -11,14 +11,14 @@ import treeObj7 from '../assets/treeObj7.png'
 
 interface SideBarProps {
   handleSelectedObj: Function
-  SideBhandleMousePositionar: Function
+  handleMousePositionInSideBar: Function
 }
 
 interface ObjContainerProps {
   backgroundImg : string;
 }
 
-export default function SideBar({handleSelectedObj, SideBhandleMousePositionar}:SideBarProps): ReactElement {
+export default function SideBar({handleSelectedObj, handleMousePositionInSideBar}:SideBarProps): ReactElement {
   const [objList, setObjList] = useState<string[]>([treeObj1,treeObj2,treeObj3,treeObj4,treeObj5,treeObj6,treeObj7]);
   const renderObjList = () =>{
     return (objList.map((el, idx)=> {
@@ -27,7 +27,7 @@ export default function SideBar({handleSelectedObj, SideBhandleMousePositionar}:
           backgroundImg={el}
           onClick={(e)=>{
             handleSelectedObj(el);
-            SideBhandleMousePositionar({positionX: e.clientX, positionY: e.clientY})
+            handleMousePositionInSideBar({positionX: e.clientX, positionY: e.clientY})
           }}
         />
       )
