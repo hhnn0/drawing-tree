@@ -43,7 +43,7 @@ export default function Canvas() {
   const handleSelectedObj = (obj: string) => {
     setSelectedObj(obj);
   }
-  const handleMousePOsition = ({positionX, positionY}:mousePosition)=> {
+  const SideBhandleMousePositionar = ({positionX, positionY}:mousePosition)=> {
     setMousePosition({...mousePosition, positionX, positionY})
   }
   // useEffect(()=>{
@@ -69,7 +69,7 @@ export default function Canvas() {
       </CanvasContainer>
       <SideBar 
       handleSelectedObj={handleSelectedObj}
-      handleMousePOsition={handleMousePOsition}
+      SideBhandleMousePositionar={SideBhandleMousePositionar}
       />
       {selectedObj !== ''&&mousePosition.positionX&&mousePosition.positionY
         ?(
