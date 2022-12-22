@@ -1,12 +1,12 @@
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle'
-import Main from './pages/Main';
+import Canvas from './components/Canvas';
 export default function App() {
   return (
     <>
     <GlobalStyle />
     <div className="App">
-      <Main/>
+      <Canvas/>
     </div>
     </>
   );
