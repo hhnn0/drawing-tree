@@ -9,7 +9,7 @@ import treeObj5 from '../assets/treeObj5.png'
 import treeObj6 from '../assets/treeObj6.png'
 import treeObj7 from '../assets/treeObj7.png'
 
-interface BottomBarProps {
+interface SideBarProps {
   handleSelectedObj: Function
   handleMousePOsition: Function
 }
@@ -18,7 +18,7 @@ interface ObjContainerProps {
   backgroundImg : string;
 }
 
-export default function BottomBar({handleSelectedObj, handleMousePOsition}:BottomBarProps): ReactElement {
+export default function SideBar({handleSelectedObj, handleMousePOsition}:SideBarProps): ReactElement {
   const [objList, setObjList] = useState<string[]>([treeObj1,treeObj2,treeObj3,treeObj4,treeObj5,treeObj6,treeObj7]);
   const renderObjList = () =>{
     return (objList.map((el, idx)=> {

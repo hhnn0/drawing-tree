@@ -1,7 +1,7 @@
 import React, { Ref } from 'react';
 import styled from 'styled-components'
 import { useState, useRef, useEffect } from "react";
-import BottomBar from './BottomBar';
+import SideBar from './SideBar';
 import Tree from '../assets/tree.png'
 
 interface mousePosition {
@@ -67,7 +67,7 @@ export default function Canvas() {
           height={window.innerHeight}
         />
       </CanvasContainer>
-      <BottomBar 
+      <SideBar 
       handleSelectedObj={handleSelectedObj}
       handleMousePOsition={handleMousePOsition}
       />
@@ -115,7 +115,7 @@ const CanvasContainer = styled.div<ObjContainerProps>`
   background-position-y: -130px;
   background-size:853px 1280px;
   background-repeat: no-repeat;
-  background-color: #070a38db;
+  background-color: #8aacbf87;
 `
 
 const CanvasComponent = styled.canvas`
