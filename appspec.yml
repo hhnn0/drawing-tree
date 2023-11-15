@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/build/
+hooks:
+  AfterInstall: # 배포 후
+    - location: execute-deploy.sh
+      timeout: 180
